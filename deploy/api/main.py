@@ -145,10 +145,12 @@ app = FastAPI(
     version="1.0.0",
 )
 
-# CORS abierto: la API es consumida por un frontend estático público (sin datos sensibles reales).
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://churn-prediction-frontend-one.vercel.app",
+        "http://localhost:3000",
+    ],
     allow_methods=["POST", "GET"],
     allow_headers=["*"],
 )
