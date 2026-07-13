@@ -1,0 +1,11 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "functions": {
+    "api/main.py": {
+      "excludeFiles": "{notebooks/**,tests/**,docs/**,**/*.md,**/*.txt,**/*.docx}"
+    }
+  },
+  "routes": [
+    { "src": "/api/(.*)", "dest": "api/main.py" }
+  ]
+}
