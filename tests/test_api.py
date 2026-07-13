@@ -9,7 +9,7 @@ Requiere que api/modelo/ contenga modelo_xgb_final.joblib y columnas_modelo.jobl
 import sys
 import os
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "api"))
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "deploy", "api"))
 
 import pytest
 from fastapi.testclient import TestClient
