@@ -103,8 +103,6 @@ El notebook [`Proyecto_Churn_Notebook.ipynb`](notebooks/Proyecto_Churn_Notebook.
 │   └── Proyecto_Churn_Notebook.ipynb   # Notebook completo (EDA, entrenamiento, evaluación)
 ├── tests/
 │   └── test_api.py             # Pruebas automatizadas (pytest)
-├── docs/
-│   └── Informe_Proyecto_Churn.docx
 ├── .gitignore
 ├── README.md
 └── requirements-dev.txt
